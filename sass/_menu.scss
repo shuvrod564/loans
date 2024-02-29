@@ -24,8 +24,8 @@
 .navbar {    
     .nav-item {  
         .nav-link {
-            font-size: 1rem;  
-            color: var(--dark); 
+            font-size: 1.15rem;  
+            color: var(--brand); 
             font-weight: 500;  
             transition: all .3s ease-in-out; 
   
@@ -35,6 +35,7 @@
 
                 .caret { transform: rotate(-180deg); }
             }  
+            
         }
         &.active  .nav-link { 
             color: var(--yellow);  
@@ -146,7 +147,17 @@
         // padding:  0; 
     }
 } 
- 
+
+
+// .dropdown-toggle{
+//     &::after { 
+//         // margin-left: 5em; 
+//         // transform: rotate(180deg);
+//     }
+    
+
+// }
+
 
 .sideNav { 
  

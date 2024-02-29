@@ -1,7 +1,7 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap");
 :root {
-  --brand: #003E6E;
+  --brand: #4e97dc;
   --yellow: #F7A800;
   --brand-light-bg: rgba(220, 25, 45, 0.04);
   --bg-light-blue: #D7E9F3;
@@ -362,8 +362,8 @@ ul li {
 }
 
 .navbar .nav-item .nav-link {
-  font-size: 1rem;
-  color: var(--dark);
+  font-size: 1.15rem;
+  color: var(--brand);
   font-weight: 500;
   transition: all 0.3s ease-in-out;
 }
@@ -556,18 +556,18 @@ ul li {
 }
 
 footer {
-  background-color: #EAEAEA;
+  background-color: #663398;
   padding: 3rem 0 0rem 0;
 }
 footer a {
-  color: var(--link-color);
+  color: var(--white);
   text-transform: capitalize;
-  font-size: 0.937rem;
+  font-size: 1rem;
   font-weight: 500;
 }
 footer a:hover {
   text-decoration: underline;
-  color: var(--brand);
+  color: var(--yellow);
 }
 footer .border-top {
   border-color: rgba(255, 255, 255, 0.3) !important;

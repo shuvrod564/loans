@@ -7,16 +7,16 @@
     }
 }
 footer {    
-    background-color: #EAEAEA;
+    background-color: #663398;
     padding: 3rem 0 0rem 0;
  
     a { 
-        color: var(--link-color);
+        color: var(--white);
         text-transform: capitalize;   
-        font-size: .937rem; 
+        font-size: 1rem; 
         font-weight: 500;
         &:hover { 
-            text-decoration: underline;color: var(--brand);
+            text-decoration: underline;color: var(--yellow);
         } 
     }
     

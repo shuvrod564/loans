@@ -127,8 +127,10 @@
 }
 
 /*======================= Header Wrapper Styles ========================*/
-.header__wrapper {
-  min-height: 100vh;
+.header__wrapper img {
+  height: calc(100vh - 40px);
+  -o-object-position: center top;
+     object-position: center top;
 }
 .header__wrapper .h1 {
   font-size: calc(10px + 4vw);
@@ -146,192 +148,63 @@
   background-color: var(--brand) !important;
 }
 
-.experience__card {
+.india__wraper {
+  border-radius: 1.5rem;
+  transition: all 0.5s ease-in-out;
+  color: var(--dark);
+  border: 1px solid #707070;
+}
+.india__wraper:hover {
+  color: var(--white);
+  background-color: rgba(102, 51, 152, 0.8);
+}
+.india__wraper .apply {
+  color: var(--white) !important;
+}
+
+.icon__box {
+  width: 5.25rem;
+  height: 5.25rem;
+  border-radius: 0.75rem;
   background-color: #fff;
-  color: var(--brand);
-  max-width: 13rem;
-  margin-left: auto;
-  margin-right: auto;
-  line-height: 1.2;
-}
-.experience__card .icon {
-  width: 11rem;
-  height: 11rem;
-  background-color: var(--brand);
-}
-.experience__card .caption {
-  min-height: 9rem;
 }
 
-.margin__top {
-  margin-top: 5rem;
+.faq__wrapper .accordion .accordion-item {
+  margin-bottom: 1.5rem;
+  border: 1px solid #FBFBFB;
+  border-radius: 0.45rem;
+  background-color: #FBFBFB;
+  box-shadow: 0px 0.5rem 1.125rem rgba(0, 0, 0, 0.1607843137);
+  position: relative;
 }
-
-@media (max-width: 1400px) {
-  .experience__card {
-    max-width: 12rem;
-  }
-  .experience__card .icon {
-    width: 9rem;
-    height: 9rem;
-  }
-  .experience__card .icon img {
-    max-height: 4rem;
-    width: auto;
-  }
-  .margin__top {
-    margin-top: 2rem;
-  }
+.faq__wrapper .accordion .accordion-item .accordion-button {
+  color: var(--dark);
+  font-weight: 500;
+  padding: 1.25rem;
+  font-family: var(--body-font);
+  font-size: 1.125rem;
+  min-height: 4.5rem;
+  display: flex;
+  align-items: center;
+  box-shadow: none;
 }
-@media (max-width: 1200px) {
-  .experience__card {
-    max-width: 10rem;
-  }
-  .experience__card .icon {
-    width: 7rem;
-    height: 7rem;
-  }
-  .experience__card .icon img {
-    max-height: 3rem;
-    width: auto;
-  }
-  .experience__card .caption {
-    min-height: 6rem;
-  }
-  .experience__card .caption .lead-sm {
-    font-size: 0.937rem;
-  }
-  .experience__card .caption .fs-13 {
-    font-size: 12px;
-  }
-  .margin__top {
-    margin-top: 0;
-    position: relative;
-    z-index: 11;
-  }
+.faq__wrapper .accordion .accordion-item .accordion-button::after {
+  background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyOCIgaGVpZ2h0PSIyOCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9IiMzMjg0N0YiIHN0cm9rZS13aWR0aD0iMi41IiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJmZWF0aGVyIGZlYXRoZXItY2hldnJvbi1kb3duIj48cG9seWxpbmUgcG9pbnRzPSI2IDkgMTIgMTUgMTggOSI+PC9wb2x5bGluZT48L3N2Zz4=");
+  background-size: 1.5rem 1.5rem;
 }
-@media (max-width: 992px) {
-  .experience__card {
-    max-width: 8rem;
-  }
-  .experience__card .icon {
-    width: 5rem;
-    height: 5rem;
-    margin-bottom: 0.2rem !important;
-  }
-  .experience__card .icon img {
-    max-height: 2rem;
-    width: auto;
-  }
-  .experience__card .caption {
-    min-height: 6rem;
-  }
-  .experience__card .caption .lead-sm {
-    font-size: 0.937rem;
-  }
-  .experience__card .caption .fs-13 {
-    font-size: 10px;
-    max-height: 4rem;
-    overflow-y: auto;
-  }
-  .margin__top {
-    margin-top: 3rem;
-    position: relative;
-    z-index: 11;
-  }
+.faq__wrapper .accordion .accordion-item .accordion-button:not(.collapsed) {
+  color: var(--dark);
+  background-color: transparent;
+  box-shadow: none;
 }
-@media (max-width: 768px) {
-  .experience__card {
-    max-width: 8rem;
-  }
-  .margin__top {
-    margin-top: 1rem;
-  }
+.faq__wrapper .accordion .accordion-item .accordion-button:focus {
+  box-shadow: none;
 }
-@media (max-width: 768px) {
-  .experience__card {
-    max-width: 100%;
-  }
-  .experience__card .icon {
-    width: 7rem;
-    height: 7rem;
-  }
-  .experience__card .icon img {
-    max-height: 3rem;
-  }
-  .experience__card .caption .fs-13 {
-    max-height: 100%;
-    min-height: 6rem;
-  }
-  .margin__top {
-    margin-top: 1rem;
-  }
+.faq__wrapper .accordion .accordion-item .accordion-body {
+  padding-top: 0;
 }
-/*---- Testimonial Card Style -----------------*/
-.testi__card {
-  background-color: #fff;
-  border-radius: 0.875rem;
-  border: 1px solid var(--brand);
-}
-.testi__card .quote {
-  width: 6rem !important;
-  height: auto;
-}
-.testi__card .avater {
-  width: 4.5rem !important;
-  height: 4.5rem !important;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-.testi__card .caption {
-  width: calc(100% - 4rem);
-  padding-left: 1rem;
-}
-.testi__card .testi__text {
-  max-height: 11rem;
-  overflow-y: auto;
-  padding-right: 0.2rem;
-}
-.testi__card:hover {
-  background-color: rgba(0, 62, 110, 0.0823529412);
-}
-
-.owl-carousel.testimonialSlider .owl-stage-outer {
-  height: calc(100% + 30px);
-  margin: -9px;
-  padding: 9px;
-  width: calc(100% + 22px);
-}
-
-/*-------------------- Blog Card Styles -----------*/
-.blog__card {
-  border: 1px solid var(--brand);
-}
-.blog__card .caption .title a {
-  color: #343434;
-}
-.blog__card .caption .title a:focus, .blog__card .caption .title a:hover, .blog__card .caption .title a:active {
-  color: var(--blue);
-}
-.blog__card .caption .desc {
-  overflow: hidden;
-  text-overflow: ellipsis;
-  -webkit-line-clamp: 3;
-  white-space: normal;
-  display: -webkit-box;
-  -webkit-box-orient: vertical;
-  color: #9D9D9D;
-}
-.blog__card:hover {
-  box-shadow: 0px 6px 11px rgba(141, 141, 141, 0.1607843137);
-  border-color: rgba(141, 141, 141, 0.1607843137);
-}
-
-.blogCarosel .owl-stage-outer {
-  height: calc(100% + 40px);
-  margin: -12px;
-  padding: 11px;
-  width: calc(100% + 22px);
+.faq__wrapper .accordion .accordion-item .accordion-body p:last-child {
+  margin-bottom: 0;
 }
 
 /*---------------- Page Header Styles -----------------*/
