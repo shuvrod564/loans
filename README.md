@@ -14,5 +14,5 @@ Feel free to check out my repositories and connect with me!
 
 > Frontend Stacks: html, css, scss, javascript, php
 
-# Development Server:
+# Demo
 https://loan.suvroweb.com/
