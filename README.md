@@ -1,8 +1,18 @@
-# Started: 10-10-2023
+👋 Hi, I'm Shuvro Deb Roy!
 
--- Design: https://xd.adobe.com/view/e852fb65-ecfb-4497-9fba-c0c1ad1b19f6-bd01/specs/
--- Contents: https://docs.google.com/spreadsheets/d/13_gx5XJPmAERrdWMNMxn0jUQ4LEuEKf6I_fj_4CuCzg/edit?pli=1#gid=0
+I'm a passionate Frontend Developer with expertise in building modern, responsive web applications. My skill set includes:
 
+> Languages & Frameworks: HTML, CSS, SCSS, LESS, JavaScript, React.js, Next.js
+
+> CSS Frameworks & Libraries: Bootstrap, Tailwind CSS
+
+> Design: Responsive Design, User-Centered Design
+
+I love turning complex problems into simple, beautiful, and intuitive interfaces. Always eager to learn new technologies and improve my skills.
+
+Feel free to check out my repositories and connect with me!
+
+> Frontend Stacks: html, css, scss, javascript, php
 
 # Development Server:
-https://kerala-cruises.embraceindia.in/
+https://loan.suvroweb.com/

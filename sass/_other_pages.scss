@@ -1,159 +1,18 @@
-
-/*---------------- Page Header Styles -----------------*/
-.page__header { 
-    box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.62);
-    min-height: 18rem;padding-top: 13rem;
-
-    &.details {
-        min-height: 23rem;padding-bottom: 3rem;
-    }
-} 
-
-@media (max-width: 575px) {
-    .page__header { 
-        min-height: 11rem; 
-        &.details {
-            min-height: 21rem;
-            padding-bottom: 2rem;
-            padding-top: 9rem;
-        }
-    }
-}
  
-.package__card {
-    border-radius: 0%;
+ .form-control, .form-select {
+    height: 3.5rem;padding: .5rem 1.25rem;font-size: 1.125rem;font-weight: 500;
+ }
+.label { font-weight: 500;display: block;margin-bottom: .25rem; }
 
-    &:hover {
-        border-radius: .45rem;overflow: hidden;
-        box-shadow: 0 3px 4px rgba(0, 0, 0, 0.12);
-    }
+.form-check-input { width: 1.25rem;height: 1.25rem; }
+.form-check-input:checked { background-color: var(--brand);border-color: var(--brand); }
+
+.form-check-label { font-size: 1rem;font-weight: 500;padding-left: .75rem; }
+
+.whatsapp {
+   transition: all .3s ease-in-out;
+
+   &:hover {
+      background-color: #f9f9f9;
+   }
 }
-
-.info__card {
-    border: 1px solid var(--border-color);
-
-    .icon { 
-        width: 4rem; 
-
-        &::after {
-            content: '';width: 3rem;height: 3rem;background-color: #003e6e2c;
-            position: absolute;top: -.5rem;left: -.5rem;border-radius: 50%;transition: all .3s ease-in-out;
-        }
-    }
-    .caption { width: calc(100% - 4rem); }
-
-    &:hover {
-        border-color: var(--brand);
-        .icon {
-            &::after {
-                width: 5rem;height: 5rem;
-            }
-        }
-    }
-}
-
-@media (max-width: 575px) {
-    .info__card {
-        .icon {
-            img { max-width: 3.4rem; } 
-        }
-    }
-}
-
-
-.contact__wrapper {
-    .form-control {
-        height: 3.25rem;
-        box-shadow: 0px 3px 6px #00000029;
-        border: 1px solid #CBCBCB;
-        border-radius: .625rem;
-        font-weight: 500;
-        padding-left: 1.125rem;
-    }
-    textarea.form-control {
-        height: auto;padding-top: 1rem;
-    }
-    .btn-primary {
-        background-color: #019E57;border-color: #019E57;border-width:2px;
-        font-size: 1.25rem;min-height: 3.5rem;
-
-        &:hover {
-            color: #019E57;background-color: transparent;
-        }
-    }
-}
-
-.cruise__card {
-    border-color: #727272 !important;
-
-    .thumbnail {
-        border-bottom: 1px solid #727272;
-    }
-
-    &:hover {
-        border-color: var(--brand) !important;
-
-        .thumbnail { border-color: var(--brand); }
-    }
-}
- 
-
-
-
-
-.accordion {
-    .accordion-item {
-        background-color: #fff;border-radius: .5rem;overflow: hidden;
-        margin-bottom: 1rem;background-color: transparent;box-shadow: 0px 3px 6px #00000029;
-        border: 1px solid #D9D9D9 !important;
-        .accordion-button {
-            border-radius: .65rem;color: #3E3E3E;font-size: 1.25rem;padding: 1rem 1rem;position: relative;
-            font-weight: 500;
-        
-            &::after { 
-                background-image: var(--plus); 
-                transform: none;
-            } 
-            &:not(.collapsed) {
-                color: var(--brand);
-                background-color: #fff;
-                box-shadow: none;
-                &::after { 
-                    background-image: var(--minus); 
-                      
-                }
-            }
-            &:focus { box-shadow: none; }
-        }
-        .accordion-body {
-            background-color: #fff;
-            padding-top: 0;
-            p:last-child {
-                margin-bottom: 0;
-            }
-        }
-    }
-}
-  
-.map {
-    overflow: hidden;
-    position: relative;
-    width: 100%;
-    background-color: #ccc; 
-    max-height: 27rem;
-}
-.map::after {
-    padding-top: 56.25%;
-    display: block;
-    content: '';
-}
-.map iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    border-width: 0px;
-}
-
-  

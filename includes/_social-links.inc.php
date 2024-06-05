@@ -1,4 +1,4 @@
-<ul class="d-flex social__links justify-content-center justify-content-md-start <?php echo $classes;?>">
+<ul class="d-flex flex-wrao gap-3 social__links justify-content-center">
         <li>
             <a class="d-flex justify-content-center align-items-center" href="#" target="_blank" aria-label="Facebook Account">
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
